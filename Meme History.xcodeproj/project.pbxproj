@@ -16,8 +16,8 @@
 		38F5C08220AC3B2B00B83C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C08020AC3B2B00B83C50 /* Main.storyboard */; };
 		38F5C08420AC3B9000B83C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C08320AC3B9000B83C50 /* Assets.xcassets */; };
 		38F5C08720AC3B9000B83C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F5C08520AC3B9000B83C50 /* LaunchScreen.storyboard */; };
-		38F5C09220AC3B9200B83C50 /* MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5C09120AC3B9200B83C50 /* MoviesTests.swift */; };
-		38F5C09D20AC3B9200B83C50 /* MoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5C09C20AC3B9200B83C50 /* MoviesUITests.swift */; };
+		38F5C09220AC3B9200B83C50 /* Meme_HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5C09120AC3B9200B83C50 /* Meme_HistoryTests.swift */; };
+		38F5C09D20AC3B9200B83C50 /* Meme_HistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5C09C20AC3B9200B83C50 /* Meme_HistoryUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +50,10 @@
 		38F5C08620AC3B9000B83C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38F5C08820AC3B9000B83C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F5C08D20AC3B9200B83C50 /* MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38F5C09120AC3B9200B83C50 /* MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTests.swift; sourceTree = "<group>"; };
+		38F5C09120AC3B9200B83C50 /* Meme_HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme_HistoryTests.swift; sourceTree = "<group>"; };
 		38F5C09320AC3B9200B83C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38F5C09820AC3B9200B83C50 /* MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38F5C09C20AC3B9200B83C50 /* MoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesUITests.swift; sourceTree = "<group>"; };
+		38F5C09C20AC3B9200B83C50 /* Meme_HistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme_HistoryUITests.swift; sourceTree = "<group>"; };
 		38F5C09E20AC3B9200B83C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,9 +85,9 @@
 		38F5C07020AC3B2700B83C50 = {
 			isa = PBXGroup;
 			children = (
-				38F5C07B20AC3B2A00B83C50 /* Movies */,
-				38F5C09020AC3B9200B83C50 /* MoviesTests */,
-				38F5C09B20AC3B9200B83C50 /* MoviesUITests */,
+				38F5C07B20AC3B2A00B83C50 /* Meme History */,
+				38F5C09020AC3B9200B83C50 /* Meme HistoryTests */,
+				38F5C09B20AC3B9200B83C50 /* Meme HistoryUITests */,
 				38F5C07A20AC3B2A00B83C50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38F5C07B20AC3B2A00B83C50 /* Movies */ = {
+		38F5C07B20AC3B2A00B83C50 /* Meme History */ = {
 			isa = PBXGroup;
 			children = (
 				38F5C07C20AC3B2A00B83C50 /* AppDelegate.swift */,
@@ -116,25 +116,25 @@
 				386174D420ACE95900CCB40A /* MovieTableViewCell.swift */,
 				386174D620ACEA2A00CCB40A /* MovieModel.swift */,
 			);
-			path = Movies;
+			path = "Meme History";
 			sourceTree = "<group>";
 		};
-		38F5C09020AC3B9200B83C50 /* MoviesTests */ = {
+		38F5C09020AC3B9200B83C50 /* Meme HistoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				38F5C09120AC3B9200B83C50 /* MoviesTests.swift */,
+				38F5C09120AC3B9200B83C50 /* Meme_HistoryTests.swift */,
 				38F5C09320AC3B9200B83C50 /* Info.plist */,
 			);
-			path = MoviesTests;
+			path = "Meme HistoryTests";
 			sourceTree = "<group>";
 		};
-		38F5C09B20AC3B9200B83C50 /* MoviesUITests */ = {
+		38F5C09B20AC3B9200B83C50 /* Meme HistoryUITests */ = {
 			isa = PBXGroup;
 			children = (
-				38F5C09C20AC3B9200B83C50 /* MoviesUITests.swift */,
+				38F5C09C20AC3B9200B83C50 /* Meme_HistoryUITests.swift */,
 				38F5C09E20AC3B9200B83C50 /* Info.plist */,
 			);
-			path = MoviesUITests;
+			path = "Meme HistoryUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38F5C07420AC3B2800B83C50 /* Build configuration list for PBXProject "Movies" */;
+			buildConfigurationList = 38F5C07420AC3B2800B83C50 /* Build configuration list for PBXProject "Meme History" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F5C09220AC3B9200B83C50 /* MoviesTests.swift in Sources */,
+				38F5C09220AC3B9200B83C50 /* Meme_HistoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F5C09D20AC3B9200B83C50 /* MoviesUITests.swift in Sources */,
+				38F5C09D20AC3B9200B83C50 /* Meme_HistoryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Movies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Meme History/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Movies/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Meme History/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38F5C07420AC3B2800B83C50 /* Build configuration list for PBXProject "Movies" */ = {
+		38F5C07420AC3B2800B83C50 /* Build configuration list for PBXProject "Meme History" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38F5C09F20AC3B9200B83C50 /* Debug */,

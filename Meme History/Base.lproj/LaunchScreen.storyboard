@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,32 +19,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imwatchingyou" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-B5-yM7">
-                                <rect key="frame" x="87" y="220" width="201" height="247"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alvaro.bilbao-la-vieja-bilbao@epita.fr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mN-LT-Sg3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="alvaro.bilbao-la-vieja-bilbao@epita.fr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mN-LT-Sg3">
                                 <rect key="frame" x="20" y="604" width="335" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meme History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V40-QJ-l78">
-                                <rect key="frame" x="85.5" y="95" width="204" height="41"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imwatchingyou" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-B5-yM7">
+                                <rect key="frame" x="37" y="146" width="300" height="408"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iVx-B5-yM7" secondAttribute="height" multiplier="25:34" id="caf-Au-4qQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Meme History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V40-QJ-l78">
+                                <rect key="frame" x="85.5" y="55" width="204" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iVx-B5-yM7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="F1Q-Mh-zRy"/>
+                            <constraint firstItem="iVx-B5-yM7" firstAttribute="centerX" secondItem="V40-QJ-l78" secondAttribute="centerX" id="2t6-BF-VQN"/>
                             <constraint firstItem="5mN-LT-Sg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GgO-Zo-Gjv"/>
-                            <constraint firstItem="iVx-B5-yM7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-200" id="HHu-Ra-SVh"/>
-                            <constraint firstItem="V40-QJ-l78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="M6b-4e-Y8M"/>
+                            <constraint firstItem="V40-QJ-l78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="M6b-4e-Y8M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5mN-LT-Sg3" secondAttribute="bottom" constant="40" id="SQd-DZ-IAT"/>
                             <constraint firstItem="V40-QJ-l78" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VCA-TG-UOH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iVx-B5-yM7" secondAttribute="trailing" constant="87" id="Xjq-Se-nvq"/>
-                            <constraint firstItem="iVx-B5-yM7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="qNd-k9-Fgu"/>
+                            <constraint firstItem="iVx-B5-yM7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V40-QJ-l78" secondAttribute="bottom" constant="50" id="mIQ-q4-VkV"/>
+                            <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iVx-B5-yM7" secondAttribute="bottom" constant="50" id="ntY-ot-NLz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5mN-LT-Sg3" secondAttribute="trailing" constant="20" id="uJm-D1-2t1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

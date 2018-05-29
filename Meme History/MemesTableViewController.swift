@@ -1,6 +1,6 @@
 //
-//  MoviesTableViewController.swift
-//  Movies
+//  MemesTableViewController.swift
+//  Memes
 //
 //  Created by Alvaro Bilbao La Vieja on 16/05/2018.
 //  Copyright © 2018 Alvaro Bilbao La Vieja. All rights reserved.
@@ -8,10 +8,17 @@
 
 import UIKit
 
-class MoviesTableViewController: UITableViewController {
+class MemesTableViewController: UITableViewController {
 
+    var memesArr = [MemeModel]()
+    var selectedMeme : MemeModel?
+    
+    let meme1 = MemeModel(name:"why not?", year:"2012", description:"desc", img: "whyNot")
+    let meme2 = MemeModel(name:"Im watchin you", year:"2012", description:"desc", img: "imwatchingyou")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        memesArr = [meme1, meme2]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +36,41 @@ class MoviesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return memesArr.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "memeCellIdentifier", for: indexPath) as! MemeTableViewCell
+        
+        cell.nameLabel?.text = memesArr[indexPath.row].name
+        cell.yearLabel?.text = memesArr[indexPath.row].year
+        cell.memeImg?.image = UIImage(named: (memesArr[indexPath.row].img)!)
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedMeme = memesArr[indexPath.row]
+        print("select happen", selectedMeme?.name)
+        //performSegue(withIdentifier: "showMemeDescription", sender: self)
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        let memeDetailViewController = segue.destination as! MemeDescriptionController
+        print(selectedMeme?.name)
+        memeDetailViewController.meme = selectedMeme!
+    }
+    
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -79,16 +104,6 @@ class MoviesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
     */
 

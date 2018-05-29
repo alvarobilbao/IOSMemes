@@ -1,6 +1,6 @@
 //
-//  MovieDescriptionController.swift
-//  Movies
+//  MemeDescriptionController.swift
+//  Memes
 //
 //  Created by Alvaro Bilbao La Vieja on 16/05/2018.
 //  Copyright © 2018 Alvaro Bilbao La Vieja. All rights reserved.
@@ -8,11 +8,14 @@
 
 import UIKit
 
-class MovieDescriptionController: UIViewController {
+class MemeDescriptionController: UIViewController {
 
+    var meme : MemeModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(meme?.name)
         // Do any additional setup after loading the view.
     }
 

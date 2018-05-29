@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,6 +74,9 @@
                             <outlet property="delegate" destination="csa-wA-aqY" id="E5B-ll-o0e"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="OVn-bU-lM3" kind="show" identifier="showMemeDescription" id="6wy-4G-J1v"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rF-14-pWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,9 +89,59 @@
                     <view key="view" contentMode="scaleToFill" id="In6-sb-197">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Own-93-m32">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nJp-NK-gAA">
+                                        <rect key="frame" x="37" y="96" width="300" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nJp-NK-gAA" secondAttribute="height" multiplier="40:40" id="DCT-vg-awg"/>
+                                            <constraint firstAttribute="height" constant="300" id="X42-xy-v05"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwS-0r-uPV">
+                                        <rect key="frame" x="0.0" y="30" width="375" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BI5-Ng-NGo">
+                                        <rect key="frame" x="0.0" y="416" width="375" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nJp-NK-gAA" firstAttribute="top" secondItem="jwS-0r-uPV" secondAttribute="bottom" constant="30" id="28N-b2-Lvx"/>
+                                    <constraint firstItem="jwS-0r-uPV" firstAttribute="centerX" secondItem="Own-93-m32" secondAttribute="centerX" id="2bz-9L-YXP"/>
+                                    <constraint firstItem="jwS-0r-uPV" firstAttribute="width" secondItem="Own-93-m32" secondAttribute="width" id="CkJ-iD-vCW"/>
+                                    <constraint firstItem="jwS-0r-uPV" firstAttribute="top" secondItem="Own-93-m32" secondAttribute="top" constant="30" id="EcO-cx-Vgz"/>
+                                    <constraint firstItem="BI5-Ng-NGo" firstAttribute="top" secondItem="nJp-NK-gAA" secondAttribute="bottom" constant="20" id="G8D-gK-5wJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="jwS-0r-uPV" secondAttribute="trailing" id="IbV-Hp-jTk"/>
+                                    <constraint firstAttribute="bottom" secondItem="BI5-Ng-NGo" secondAttribute="bottom" constant="222" id="KpW-im-74U"/>
+                                    <constraint firstItem="nJp-NK-gAA" firstAttribute="centerX" secondItem="Own-93-m32" secondAttribute="centerX" id="Wb3-5X-f7X"/>
+                                    <constraint firstItem="jwS-0r-uPV" firstAttribute="centerX" secondItem="nJp-NK-gAA" secondAttribute="centerX" id="d7u-cO-Hl0"/>
+                                    <constraint firstItem="BI5-Ng-NGo" firstAttribute="width" secondItem="Own-93-m32" secondAttribute="width" id="qNE-GO-1Cp"/>
+                                    <constraint firstItem="BI5-Ng-NGo" firstAttribute="centerX" secondItem="Own-93-m32" secondAttribute="centerX" id="uur-uE-bUb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Own-93-m32" secondAttribute="trailing" id="5o6-0j-2Kj"/>
+                            <constraint firstItem="Own-93-m32" firstAttribute="leading" secondItem="In6-sb-197" secondAttribute="leading" id="SBx-ef-OPG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Own-93-m32" secondAttribute="bottom" constant="-10" id="dxV-Pj-YCh"/>
+                            <constraint firstItem="Own-93-m32" firstAttribute="top" secondItem="In6-sb-197" secondAttribute="topMargin" constant="-10" id="zWU-f4-AlX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8e4-xu-0Lq"/>
                     </view>
+                    <connections>
+                        <outlet property="memeImg" destination="nJp-NK-gAA" id="9E0-Nc-vAJ"/>
+                        <outlet property="name" destination="jwS-0r-uPV" id="3gk-hK-JOX"/>
+                        <outlet property="year" destination="BI5-Ng-NGo" id="udp-hC-0hF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSk-Lh-7CV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

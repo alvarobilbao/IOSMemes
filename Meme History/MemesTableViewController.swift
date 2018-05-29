@@ -57,7 +57,7 @@ class MemesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedMeme = memesArr[indexPath.row]
         print("select happen", selectedMeme?.name)
-        //performSegue(withIdentifier: "showMemeDescription", sender: self)
+        performSegue(withIdentifier: "showMemeDescription", sender: self)
     }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation

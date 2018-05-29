@@ -10,12 +10,19 @@ import UIKit
 
 class MemeDescriptionController: UIViewController {
 
-    var meme : MemeModel?
+    var meme : MemeModel!
     
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var year: UILabel!
+    @IBOutlet weak var memeImg: UIImageView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(meme?.name)
+        
+        name.text = meme.name
+        year.text = meme.year
+        memeImg.image = UIImage(named: meme.img!)
+        
         // Do any additional setup after loading the view.
     }
 

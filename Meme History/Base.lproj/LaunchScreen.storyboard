@@ -37,14 +37,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alvaro Bilbao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-qn-YVY">
+                                <rect key="frame" x="130" y="543" width="114" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.4108669942" green="0.69944138600000005" blue="0.3889055246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iVx-B5-yM7" firstAttribute="centerX" secondItem="V40-QJ-l78" secondAttribute="centerX" id="2t6-BF-VQN"/>
+                            <constraint firstItem="qW2-qn-YVY" firstAttribute="centerX" secondItem="iVx-B5-yM7" secondAttribute="centerX" id="98c-h6-k3k"/>
+                            <constraint firstItem="qW2-qn-YVY" firstAttribute="top" secondItem="iVx-B5-yM7" secondAttribute="bottom" constant="-11" id="DVB-VU-5et"/>
                             <constraint firstItem="5mN-LT-Sg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GgO-Zo-Gjv"/>
                             <constraint firstItem="V40-QJ-l78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="M6b-4e-Y8M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5mN-LT-Sg3" secondAttribute="bottom" constant="40" id="SQd-DZ-IAT"/>
                             <constraint firstItem="V40-QJ-l78" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VCA-TG-UOH"/>
+                            <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" secondItem="qW2-qn-YVY" secondAttribute="bottom" constant="37" id="ekn-Yr-Eq8"/>
                             <constraint firstItem="iVx-B5-yM7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V40-QJ-l78" secondAttribute="bottom" constant="50" id="mIQ-q4-VkV"/>
                             <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iVx-B5-yM7" secondAttribute="bottom" constant="50" id="ntY-ot-NLz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5mN-LT-Sg3" secondAttribute="trailing" constant="20" id="uJm-D1-2t1"/>

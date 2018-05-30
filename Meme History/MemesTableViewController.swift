@@ -15,10 +15,11 @@ class MemesTableViewController: UITableViewController {
     
     let meme1 = MemeModel(name:"why not?", year:"2012", description:"desc", img: "whyNot")
     let meme2 = MemeModel(name:"Im watchin you", year:"2012", description:"desc", img: "imwatchingyou")
+    let meme3 = MemeModel(name:"Pedobear", year:"2003", description:"Pedobear is a cartoon mascot that became a well-known icon through its usage on 4chan to signal moderators and other users that illegal pornographic content had been posted. Due to the widespread nature of its application, Pedobear has been often misinterpreted as a symbol of pedophilia and lolita complex, especially in the news media and law enforcement agencies. \n\n The character known today as Pedobear used to be simply known as Kumar or Kuma (bear) on the Japanese textboard 2channel.", img: "pedobear")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        memesArr = [meme1, meme2]
+        memesArr = [meme1, meme2, meme3]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -56,7 +57,6 @@ class MemesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedMeme = memesArr[indexPath.row]
-        print("select happen", selectedMeme?.name)
         performSegue(withIdentifier: "showMemeDescription", sender: self)
     }
     
@@ -66,7 +66,6 @@ class MemesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         let memeDetailViewController = segue.destination as! MemeDescriptionController
-        print(selectedMeme?.name)
         memeDetailViewController.meme = selectedMeme!
     }
     

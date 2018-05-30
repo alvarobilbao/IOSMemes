@@ -15,13 +15,15 @@ class MemeDescriptionController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var memeImg: UIImageView!
-   
+    @IBOutlet weak var content: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         name.text = meme.name
         year.text = meme.year
         memeImg.image = UIImage(named: meme.img!)
+        content.text = meme.description
         
         // Do any additional setup after loading the view.
     }

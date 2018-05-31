@@ -35,7 +35,7 @@ class MemesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        memesArr = [meme1, meme2, meme3, meme4, meme5]
+        memesArr = [meme1, meme2, meme3, meme4, meme5, meme6, meme7, meme8, meme9, meme10]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

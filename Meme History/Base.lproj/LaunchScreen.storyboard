@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,26 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="alvaro.bilbao-la-vieja-bilbao@epita.fr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mN-LT-Sg3">
-                                <rect key="frame" x="20" y="604" width="335" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="alvaro.bilbao-la-vieja-bilbao@epita.fr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mN-LT-Sg3">
+                                <rect key="frame" x="20" y="591" width="335" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imwatchingyou" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-B5-yM7">
-                                <rect key="frame" x="37" y="146" width="300" height="408"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="iVx-B5-yM7" secondAttribute="height" multiplier="25:34" id="caf-Au-4qQ"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Meme History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V40-QJ-l78">
-                                <rect key="frame" x="85.5" y="55" width="204" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Meme History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V40-QJ-l78">
+                                <rect key="frame" x="85.5" y="40" width="204" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alvaro Bilbao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-qn-YVY">
-                                <rect key="frame" x="130" y="543" width="114" height="24"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="247" image="BlueButton" translatesAutoresizingMaskIntoConstraints="NO" id="qOq-pa-QtC">
+                                <rect key="frame" x="-10" y="125" width="395" height="446"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Alvaro Bilbao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCx-dN-ZVX">
+                                <rect key="frame" x="-0.5" y="91" width="375" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,17 +42,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.4108669942" green="0.69944138600000005" blue="0.3889055246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iVx-B5-yM7" firstAttribute="centerX" secondItem="V40-QJ-l78" secondAttribute="centerX" id="2t6-BF-VQN"/>
-                            <constraint firstItem="qW2-qn-YVY" firstAttribute="centerX" secondItem="iVx-B5-yM7" secondAttribute="centerX" id="98c-h6-k3k"/>
-                            <constraint firstItem="qW2-qn-YVY" firstAttribute="top" secondItem="iVx-B5-yM7" secondAttribute="bottom" constant="-11" id="DVB-VU-5et"/>
+                            <constraint firstItem="qOq-pa-QtC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="FdO-61-gly"/>
                             <constraint firstItem="5mN-LT-Sg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GgO-Zo-Gjv"/>
-                            <constraint firstItem="V40-QJ-l78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="M6b-4e-Y8M"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5mN-LT-Sg3" secondAttribute="bottom" constant="40" id="SQd-DZ-IAT"/>
+                            <constraint firstItem="RCx-dN-ZVX" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="H5D-ae-50c"/>
+                            <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" secondItem="qOq-pa-QtC" secondAttribute="bottom" constant="20" id="LBN-v4-4y4"/>
+                            <constraint firstItem="V40-QJ-l78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="M6b-4e-Y8M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="qOq-pa-QtC" secondAttribute="leading" constant="10" id="RX5-Hb-a4H"/>
                             <constraint firstItem="V40-QJ-l78" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VCA-TG-UOH"/>
-                            <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" secondItem="qW2-qn-YVY" secondAttribute="bottom" constant="37" id="ekn-Yr-Eq8"/>
-                            <constraint firstItem="iVx-B5-yM7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="V40-QJ-l78" secondAttribute="bottom" constant="50" id="mIQ-q4-VkV"/>
-                            <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iVx-B5-yM7" secondAttribute="bottom" constant="50" id="ntY-ot-NLz"/>
+                            <constraint firstItem="RCx-dN-ZVX" firstAttribute="top" secondItem="V40-QJ-l78" secondAttribute="bottom" constant="10" id="Vxq-J6-HJS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5mN-LT-Sg3" secondAttribute="bottom" constant="10" id="Wgs-Cd-EEg"/>
+                            <constraint firstItem="qOq-pa-QtC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gDW-dX-FpT"/>
+                            <constraint firstItem="qOq-pa-QtC" firstAttribute="top" secondItem="RCx-dN-ZVX" secondAttribute="bottom" constant="10" id="u8o-Df-ycM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5mN-LT-Sg3" secondAttribute="trailing" constant="20" id="uJm-D1-2t1"/>
+                            <constraint firstItem="RCx-dN-ZVX" firstAttribute="centerX" secondItem="V40-QJ-l78" secondAttribute="centerX" id="uOD-2i-sDl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -67,6 +65,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="imwatchingyou" width="512" height="512"/>
+        <image name="BlueButton" width="600" height="446"/>
     </resources>
 </document>

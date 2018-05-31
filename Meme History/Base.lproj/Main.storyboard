@@ -15,14 +15,14 @@
         <!--Memes Table View Controller-->
         <scene sceneID="ZjQ-Yc-f7d">
             <objects>
-                <tableViewController id="csa-wA-aqY" customClass="MemesTableViewController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="csa-wA-aqY" customClass="MemesTableViewController" customModule="Meme_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="n0u-cu-O85">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.4108669942" green="0.69944138600000005" blue="0.3889055246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.4108669942" green="0.69944138600000005" blue="0.3889055246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memeCellIdentifier" rowHeight="150" id="OKk-0l-qbE" customClass="MemeTableViewCell" customModule="Movies" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memeCellIdentifier" rowHeight="150" id="OKk-0l-qbE" customClass="MemeTableViewCell" customModule="Meme_History" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OKk-0l-qbE" id="dVQ-n4-UuV">
@@ -88,7 +88,7 @@
         <!--Meme Description Controller-->
         <scene sceneID="67i-R0-fCg">
             <objects>
-                <viewController id="OVn-bU-lM3" customClass="MemeDescriptionController" customModule="Movies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OVn-bU-lM3" customClass="MemeDescriptionController" customModule="Meme_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="In6-sb-197">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

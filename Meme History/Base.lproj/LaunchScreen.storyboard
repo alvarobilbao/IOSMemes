@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,42 +20,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="alvaro.bilbao-la-vieja-bilbao@epita.fr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mN-LT-Sg3">
-                                <rect key="frame" x="20" y="591" width="335" height="23"/>
+                                <rect key="frame" x="20" y="624" width="335" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Meme History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V40-QJ-l78">
-                                <rect key="frame" x="85.5" y="40" width="204" height="41"/>
+                                <rect key="frame" x="86" y="40" width="204" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="247" image="BlueButton" translatesAutoresizingMaskIntoConstraints="NO" id="qOq-pa-QtC">
-                                <rect key="frame" x="-10" y="125" width="395" height="446"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Alvaro Bilbao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCx-dN-ZVX">
-                                <rect key="frame" x="-0.5" y="91" width="375" height="24"/>
+                                <rect key="frame" x="0.5" y="91" width="375" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Yes-tE-2Ti">
+                                <rect key="frame" x="20" y="135" width="335" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yes-tE-2Ti" secondAttribute="height" multiplier="60:60" id="IfZ-yv-ilf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.4108669942" green="0.69944138600000005" blue="0.3889055246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qOq-pa-QtC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="FdO-61-gly"/>
                             <constraint firstItem="5mN-LT-Sg3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GgO-Zo-Gjv"/>
+                            <constraint firstItem="Yes-tE-2Ti" firstAttribute="top" secondItem="RCx-dN-ZVX" secondAttribute="bottom" constant="20" id="Gkc-MS-Skq"/>
                             <constraint firstItem="RCx-dN-ZVX" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="H5D-ae-50c"/>
-                            <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" secondItem="qOq-pa-QtC" secondAttribute="bottom" constant="20" id="LBN-v4-4y4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yes-tE-2Ti" secondAttribute="trailing" constant="20" id="LPd-H2-Bvj"/>
                             <constraint firstItem="V40-QJ-l78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="M6b-4e-Y8M"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="qOq-pa-QtC" secondAttribute="leading" constant="10" id="RX5-Hb-a4H"/>
                             <constraint firstItem="V40-QJ-l78" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VCA-TG-UOH"/>
                             <constraint firstItem="RCx-dN-ZVX" firstAttribute="top" secondItem="V40-QJ-l78" secondAttribute="bottom" constant="10" id="Vxq-J6-HJS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5mN-LT-Sg3" secondAttribute="bottom" constant="10" id="Wgs-Cd-EEg"/>
-                            <constraint firstItem="qOq-pa-QtC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gDW-dX-FpT"/>
-                            <constraint firstItem="qOq-pa-QtC" firstAttribute="top" secondItem="RCx-dN-ZVX" secondAttribute="bottom" constant="10" id="u8o-Df-ycM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5mN-LT-Sg3" secondAttribute="bottom" constant="20" id="Wgs-Cd-EEg"/>
+                            <constraint firstItem="5mN-LT-Sg3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Yes-tE-2Ti" secondAttribute="bottom" constant="20" id="eZc-80-cnM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5mN-LT-Sg3" secondAttribute="trailing" constant="20" id="uJm-D1-2t1"/>
                             <constraint firstItem="RCx-dN-ZVX" firstAttribute="centerX" secondItem="V40-QJ-l78" secondAttribute="centerX" id="uOD-2i-sDl"/>
+                            <constraint firstItem="Yes-tE-2Ti" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yj0-Pv-Z2n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,6 +68,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BlueButton" width="600" height="446"/>
+        <image name="Logo" width="425" height="484"/>
     </resources>
 </document>

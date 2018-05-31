@@ -23,6 +23,16 @@ class MemesTableViewController: UITableViewController {
     
     let meme5 = MemeModel(name: "It's A Trap!", year: "2000", description: "It's A Trap! is a catchphrase that is often used as a reaction image to photos of transsexuals and crossdressers (often referred to as traps), or people who appear sexually ambiguous. It usually means that the person in question has male reproductive organs, regardless of their appearance. Though less frequently, the phrase can be also used as a warning of any potential danger.", img: "itsATrap")
     
+    let meme6 = MemeModel(name: "komo lo zupo", year: "2014", description: "This meme is mainly used in spanish speaking countries, mainly in Mexico, it became popular around year 2014-2015, and is a screenshot of a popular japanese puppet show called \"Kids in development\"that began airing on year 1959 until 1987. This specific puppet is called Pedro. The meme express the sarchasm when somebody expresses something obvious for everyone else. It is also used when someone states the truth intentions behind someones words", img: "komolozupo")
+    
+    let meme7 = MemeModel(name: "Savage Patrick", year: "2018", description: "Savage Patrick (sometimes referred to as Evil Patrick or Angry Patrick) refers to a still image of Patrick Star from Spongebob Squarepants looking as though he's in the midst of a maniacally evil chuckle.", img: "savagePatrick")
+    
+    let meme8 = MemeModel(name: "Adios Vaquero", year: "2016", description: "Is a meme based on the famous Disney movie \"Toy Story\", it appeared in late 2016, it usually denotes the loss of a friend bacause of an accident or any event that lead your friend to not hangout with you as often as you used to.", img: "woody")
+    
+    let meme9 = MemeModel(name: "Yoda head", year: "2004", description: "Yoda head is part of the second wave of memes from the internet, it is an image denoting any phrase as if it was said by Yoda", img: "yoda")
+    
+    let meme10 = MemeModel(name: "YUGIOH Cards", year: "2015", description: "The YUGIOH card memes are all the different memes which are used inside the scope of a YUGIOH card, denoting on the effect or description field of the card a funny phrase, it is mainly used for finishing internet fights with a random effect of a card, or to \"ward\" when an internet thread has something that interest you, which usually are porn related topics", img: "yugioh")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         memesArr = [meme1, meme2, meme3, meme4, meme5]
